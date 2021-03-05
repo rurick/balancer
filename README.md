@@ -1,11 +1,13 @@
 # cpubalancer
 
-**valuecpubalancer** Позволяет автоматически изменять значение переменной типа инт в зависимости от загрузки процессора в заданном интервале
+**cpubalancer** Позволяет автоматически изменять значение переменной типа инт в зависимости от загрузки процессора в заданном интервале
 
 ## Install (with GOPATH set on your machine)
 ----------
 
-* Get the `valuecpubalancer` package
+* Get the `cpubalancer` package
+```
+go get github.com/rurick/balancer
 
 ```
 
