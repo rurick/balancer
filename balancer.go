@@ -1,4 +1,4 @@
-package valuecpubalancer
+package cpubalancer
 
 import (
 	"context"
