@@ -2,7 +2,6 @@ package cpubalancer
 
 import (
 	"context"
-	"runtime"
 	"sync/atomic"
 	"time"
 
@@ -49,8 +48,6 @@ func (b *Balancer) Run(ctx context.Context, minCPUUsage int, maxCPUUsage int, ma
 		case <-ctx.Done():
 			ticker.Stop()
 			return
-		default:
-			runtime.Gosched()
 		}
 	}
 }
