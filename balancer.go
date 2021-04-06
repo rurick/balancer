@@ -56,3 +56,8 @@ func (b *Balancer) Run(ctx context.Context, minCPUUsage int, maxCPUUsage int, ma
 func (b *Balancer) Value() int {
 	return b.value.Load().(int)
 }
+
+//Set - получить значение
+func (b *Balancer) Set(val int) {
+	b.value.Store(val)
+}
