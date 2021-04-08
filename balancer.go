@@ -29,7 +29,7 @@ func New(val int) *Balancer {
 func (b *Balancer) Run(ctx context.Context, minCPUUsage int, maxCPUUsage int, maxVal int) {
 	cpu1 := systemstat.GetCPUSample()
 	cpu2 := cpu1
-	ticker := time.NewTicker(5 * time.Second)
+	ticker := time.NewTicker(1 * time.Second)
 
 	for {
 		select {
