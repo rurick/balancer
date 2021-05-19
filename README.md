@@ -11,7 +11,7 @@ go get github.com/rurick/balancer
 
 ```
 
-##Usage
+###Usage
 ----------
 ```
 package main
